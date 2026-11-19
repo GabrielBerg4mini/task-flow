@@ -15,7 +15,6 @@ export interface Task {
 }
 
 export type UpdateTask = Partial<Omit<Task, 'id' | 'progress'>>
-export type CompletedUpdateTask = Partial<Pick<Task, 'title' | 'description'>>
 
 type StatusCreatedTask = Exclude<StatusTask, 'completed'>
 export type CreateTaskDto = Pick<
