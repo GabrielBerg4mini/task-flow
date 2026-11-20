@@ -1,1 +1,23 @@
 @import 'tailwindcss';
+
+/* Tokens do design (viram classes: bg-brand, text-ink, bg-canvas...) */
+@theme {
+  --color-brand: #3f4ff0;
+  --color-brand-soft: #eceefe;
+  --color-page: #e4e7fb;
+  --color-canvas: #f3f4fa;
+  --color-ink: #1c2033;
+  --color-muted: #6b7280;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-page);
+  color: var(--color-ink);
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
